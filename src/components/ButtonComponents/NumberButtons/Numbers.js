@@ -13,8 +13,7 @@ const Numbers = (props) => {
   // STEP 2 - add the imported data to state
   const [newNumArray, setNewNumArray ] = useState(numbers);
   return (
-    <div>
-      <div className="button_container" />
+    <div className="button_container">
       {newNumArray.map((currentNum, index) => (
         <NumberButton key={index} currentNumObj ={currentNum} showValue = {props.showValue}/>
       ))}

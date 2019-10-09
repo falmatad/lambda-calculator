@@ -10,8 +10,7 @@ const Specials = () => {
 
   const [newSpecialArray, setNewSpecialArray ] = useState(specials);
   return (
-    <div>
-      <div className="button_container" />
+    <div className="button_container">
       {newSpecialArray.map((currentSpecial, index) => (
         <SpecialButton key={index} currentSpecialObj ={currentSpecial} />
       ))}

@@ -9,8 +9,7 @@ const Operators = (props) => {
   // STEP 2 - add the imported data to state
   const [newOprArray, setNewOprArray ] = useState(operators);
   return (
-    <div>
-      <div className="button_container" />
+      <div className="button_container" >
       {newOprArray.map((currentOperator, index) => (
         <OperatorButton key={index} currentOperatorObj ={currentOperator.char} showValue = {props.showValue}/>
       ))}

@@ -30,9 +30,13 @@ function App() {
       <Display displayValueObj={displayValueVar}/>
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Operators showValue = {showValue}/>
-        <Numbers showValue = {showValue}/>
+        <div className = "user-input">
         <Specials />
+        <Numbers showValue = {showValue}/>
+        </div>
+        <div class = "opr">
+        <Operators showValue = {showValue}/>
+        </div>
       </div>
     </div>
   );
